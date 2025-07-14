@@ -7,50 +7,55 @@
   <title>TailwindCss Testing</title>
 </head>
 <body class="dark:text-white dark:bg-black bg-[#F2EFE7] h-full flex flex-col">
- <header class="bg-blue-400 flex justify-between items-center px-50 h-17">
+  <header class="bg-blue-400 flex flex-wrap justify-between items-center px-[50px] py-4">
   <div class="flex items-center">
     <a href="./index.html">
       <img class="h-17" src="./src/img/vampire.png" alt="site logo">
     </a>
   </div>
-  <div class="flex gap-4 font-bold">
+  <div class="flex gap-4 font-bold flex-row max-sm:flex-col w-full sm:w-auto justify-center sm:justify-end mt-4 sm:mt-0 text-center">
     <a href="./index.html" class="p-3 hover:font-extrabold hover:bg-[#56DFCF] hover:rounded-sm">About Me</a>
     <a href="./src/Contact.html" class="p-3 hover:font-extrabold hover:bg-[#56DFCF] hover:rounded-sm">Contact</a>
     <a href="./src/Myprojects.html" class="p-3 hover:font-extrabold hover:bg-[#56DFCF] hover:rounded-sm">My Projects</a>
   </div>
 </header>
+
   <main class="p-4 flex-grow">
-      <h1 class="text-4xl font-bold text-center py-4">This is my portfolio site!</h1>
-      <hr class="">
-      <div class="flex gap-10 justify-center p-10 items-center">
-        <p class="inline-block font-bold px-10 py-10 bg-[#588bbb] rounded-2xl max-w-xl hover:border-3 hover:border-[#56DFCF]">
-          I am a dedicated and adaptable computing student with a strong foundation in technology and problem-solving, currently expanding my skill set through an MBA program. My academic background in Computer Science has equipped me with proficiency in programming languages, data structures, and software development, while my MBA studies are honing my leadership, strategic thinking, and business management skills.
-          <br><br>I am passionate about leveraging technology to solve complex problems and drive innovation. With a unique blend of technical expertise and business acumen, I am particularly interested in areas such as tech entrepreneurship, data analytics, and digital transformation.<br><br> I am eager to contribute to projects that bridge the gap between technology and business and am actively seeking opportunities where I can apply both my technical and business skills to real-world challenges.
-          Looking forward to connecting with like-minded professionals and exploring collaborative opportunities in the tech and business sectors.
-        </p>
-        <img src="./src/img/pfp.png" alt="profile picture" class="w-60 h-60 rounded-full hover:border-3 hover:border-[#56DFCF]">
-      </div>
+    <h1 class="text-4xl font-bold text-center py-4">This is my portfolio site!</h1>
+    <hr>
+   <div class="flex flex-col md:flex-row gap-10 justify-center items-center p-4 md:p-10 w-full max-w-7xl mx-auto">
+  <p class="font-bold px-6 py-6 bg-[#588bbb] rounded-2xl max-w-xl hover:border-3 hover:border-[#56DFCF] text-justify">
+    I am a dedicated and adaptable computing student with a strong foundation in technology and problem-solving, currently expanding my skill set through an MBA program. My academic background in Computer Science has equipped me with proficiency in programming languages, data structures, and software development, while my MBA studies are honing my leadership, strategic thinking, and business management skills.
+    <br><br>
+    I am passionate about leveraging technology to solve complex problems and drive innovation. With a unique blend of technical expertise and business acumen, I am particularly interested in areas such as tech entrepreneurship, data analytics, and digital transformation.
+    <br><br>
+    I am eager to contribute to projects that bridge the gap between technology and business and am actively seeking opportunities where I can apply both my technical and business skills to real-world challenges.
+    Looking forward to connecting with like-minded professionals and exploring collaborative opportunities in the tech and business sectors.
+  </p>
+  <img src="./src/img/pfp.png" alt="profile picture" class="w-48 h-48 md:w-60 md:h-60 rounded-full hover:border-3 hover:border-[#56DFCF]">
+</div>
 
-      <div class="flex flex-col gap-4 items-center">
-        <h2 class="text-center font-bold text-3xl">Experiences</h2>
-        <p class="inline-block px-10 py-6 bg-[#588bbb] rounded-2xl text-center max-w-xl hover:border-3 hover:border-[#56DFCF]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestias eveniet, dignissimos voluptate tempora inventore quam. Eum maxime unde temporibus ex maiores! Voluptatibus saepe ex assumenda incidunt soluta sed laborum.
-        </p>
 
-        <h2 class="text-center font-bold text-3xl">Education Background</h2>
-        <p class="inline-block px-10 py-6 bg-[#588bbb] rounded-2xl text-center max-w-xl hover:border-3 hover:border-[#56DFCF]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestias eveniet, dignissimos voluptate tempora inventore quam. Eum maxime unde temporibus ex maiores! Voluptatibus saepe ex assumenda incidunt soluta sed laborum.
-        </p>
+    <div class="flex flex-col gap-6 items-center">
+      <h2 class="text-center font-bold text-3xl">Experiences</h2>
+      <p class="inline-block px-6 py-6 bg-[#588bbb] rounded-2xl text-center max-w-xl hover:border-3 hover:border-[#56DFCF]">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestias eveniet, dignissimos voluptate tempora inventore quam. Eum maxime unde temporibus ex maiores! Voluptatibus saepe ex assumenda incidunt soluta sed laborum.
+      </p>
 
-        <h2 class="text-center font-bold text-3xl">Achievements</h2>
-        <p class="inline-block px-10 py-6 bg-[#588bbb] rounded-2xl text-center max-w-xl hover:border-3 hover:border-[#56DFCF]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestias eveniet, dignissimos voluptate tempora inventore quam. Eum maxime unde temporibus ex maiores! Voluptatibus saepe ex assumenda incidunt soluta sed laborum.
-        </p>
-      </div>
+      <h2 class="text-center font-bold text-3xl">Education Background</h2>
+      <p class="inline-block px-6 py-6 bg-[#588bbb] rounded-2xl text-center max-w-xl hover:border-3 hover:border-[#56DFCF]">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestias eveniet, dignissimos voluptate tempora inventore quam. Eum maxime unde temporibus ex maiores! Voluptatibus saepe ex assumenda incidunt soluta sed laborum.
+      </p>
 
+      <h2 class="text-center font-bold text-3xl">Achievements</h2>
+      <p class="inline-block px-6 py-6 bg-[#588bbb] rounded-2xl text-center max-w-xl hover:border-3 hover:border-[#56DFCF]">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestias eveniet, dignissimos voluptate tempora inventore quam. Eum maxime unde temporibus ex maiores! Voluptatibus saepe ex assumenda incidunt soluta sed laborum.
+      </p>
+    </div>
   </main>
+
   <footer class="bg-blue-400 flex justify-center items-center p-4 min-h-20">
-  <p class="text-sm">© 2025 My Website. All srights reserved.</p>
+    <p class="text-sm text-center">© 2025 My Website. All rights reserved.</p>
   </footer>
 </body>
 </html>
