@@ -7,52 +7,66 @@
   <title>TailwindCss Testing</title>
 </head>
 <body class="dark:text-white dark:bg-black bg-[#F2EFE7] h-full flex flex-col">
- <header class="bg-blue-400 flex justify-between items-center px-50 h-17">
+  <header class="bg-blue-400 flex flex-wrap justify-between items-center px-[50px] py-4">
   <div class="flex items-center">
-    <a href="../index.html">
+    <a href="./index.html">
       <img class="h-17" src="./img/vampire.png" alt="site logo">
     </a>
   </div>
-  <div class="flex gap-4 font-bold">
+  <div class="flex gap-4 font-bold flex-row max-sm:flex-col w-full sm:w-auto justify-center sm:justify-end mt-4 sm:mt-0 text-center">
     <a href="../index.html" class="p-3 hover:font-extrabold hover:bg-[#56DFCF] hover:rounded-sm">About Me</a>
     <a href="./Contact.html" class="p-3 hover:font-extrabold hover:bg-[#56DFCF] hover:rounded-sm">Contact</a>
     <a href="./Myprojects.html" class="p-3 hover:font-extrabold hover:bg-[#56DFCF] hover:rounded-sm">My Projects</a>
   </div>
 </header>
- <main class="flex-grow">
-    <h3 class="text-center pt-10">Hi! Anything you want to know?</h3>
-    <h1 class="text-center text-4xl font-bold">Contact Me!!!</h1>
-    <div class="flex flex-row gap-30 justify-center p-10">
-        <div class="">
-           <h2 class="font-bold text-2xl">Online Inquiry</h2> 
-           <form class="p-5 flex flex-col">
-                <label>Name</label>
-                <input class="border border-gray-400 rounded-lg hover:border-blue-500 focus:border-[#56DFCF] focus:outline-0 px-3 py-2 w-64" type="text" placeholder="John..."><br>
-                <label>Email</label>
-                <input class="border border-gray-400 rounded-lg hover:border-blue-500 focus:border-[#56DFCF] focus:outline-0 px-3 py-2 w-64" type="email" placeholder="john@email.com..."><br>
-                <label>Description</label>
-                <textarea class="border border-gray-400 rounded-lg hover:border-blue-500 focus:border-[#56DFCF] focus:outline-0 px-3 py-2 w-64 h-25" placeholder="Type something..."></textarea><br>
-                <div class="text-center">
-                  <button type="submit" class="w-fit text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send</button>
-                </div>
-                
-           </form>
+
+ <main class="flex-grow p-4">
+    <h3 class="text-center pt-6 text-lg sm:text-xl">Hi! Anything you want to know?</h3>
+    <h1 class="text-center text-3xl sm:text-4xl font-bold py-4">Contact Me!!!</h1>
+
+    <div class="flex flex-col md:flex-row gap-10 justify-center items-start p-4 md:p-10 w-full max-w-7xl mx-auto">
+      <!-- Online Inquiry Form -->
+      <div class="w-full md:w-1/2">
+        <h2 class="font-bold text-2xl pb-4 text-center md:text-left">Online Inquiry</h2>
+        <form class="p-5 flex flex-col gap-4 items-center md:items-start">
+          <div class="w-full max-w-xs">
+            <label class="block">Name</label>
+            <input class="w-full border border-gray-400 rounded-lg hover:border-blue-500 focus:border-[#56DFCF] focus:outline-0 px-3 py-2" type="text" placeholder="John...">
+          </div>
+          <div class="w-full max-w-xs">
+            <label class="block">Email</label>
+            <input class="w-full border border-gray-400 rounded-lg hover:border-blue-500 focus:border-[#56DFCF] focus:outline-0 px-3 py-2" type="email" placeholder="john@email.com...">
+          </div>
+          <div class="w-full max-w-xs">
+            <label class="block">Description</label>
+            <textarea class="w-full border border-gray-400 rounded-lg hover:border-blue-500 focus:border-[#56DFCF] focus:outline-0 px-3 py-2 h-32 resize-none" placeholder="Type something..."></textarea>
+          </div>
+          <div class="text-center md:text-left w-full max-w-xs">
+            <button type="submit" class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Address Section -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2 class="font-bold text-2xl pb-4">Address & Contact Information</h2>
+        <div class="text-sm p-5">
+          <h3 class="font-bold">Contact Info</h3>
+          <p>yeyintskylit2003@gmail.com</p>
+          <p>+66831134769</p>
         </div>
-        <div class="text-center">
-            <h2 class="font-bold text-2xl">Address & Contact Information</h2>
-            <div class="text-sm p-5">
-                <h3 class="font-bold">Contact Info</h3>
-                <p>yeyintskylit2003@gmail.com</p>
-                <p>+66831134769</p>
-            </div>
-            <div class="text-sm hover:text-blue-400">
-                <h3 class="font-bold">Mailing Address</h3>
-                <a href="https://maps.app.goo.gl/rhys9Ha5cGkZRr8N9"><p class="hover:font-bold">SKP Mansion, Soi Ramkhamhaend(50), Bangkok, Thailand</p></a>
-            </div>
+        <div class="text-sm p-5 hover:text-blue-400">
+          <h3 class="font-bold">Mailing Address</h3>
+          <a href="https://maps.app.goo.gl/rhys9Ha5cGkZRr8N9" target="_blank" rel="noopener noreferrer">
+            <p class="hover:font-bold">SKP Mansion, Soi Ramkhamhaeng 50, Bangkok, Thailand</p>
+          </a>
         </div>
+      </div>
     </div>
- </main>
- <footer class="bg-blue-400 flex justify-center items-center p-4 min-h-20">
-  <p class="text-sm">© 2025 My Website. All srights reserved.</p>
- </footer>
- </body>
+  </main>
+
+  <footer class="bg-blue-400 flex justify-center items-center p-4 min-h-20">
+    <p class="text-sm text-center">© 2025 My Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
